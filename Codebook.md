@@ -77,6 +77,7 @@ Broadly, the steps to creating the tidy data file include:
  - as per the instructions of the project select only variables containing measurements of the mean and standard deviations. 
  - recast the variable names in a flexible manner to more meaningful names
  - rearrange the data by subject ID and activity type to create final data set of 180 observations (30 subjects * 6 activities)
+ - these 180 observations consist of the mean of the means and standard deviations across multiple observations of the corresponding parameters in the raw data
  - write tidy data set into a new table "uci_har_tidy_dataset.txt" using standard separator of " "
   
 
@@ -119,10 +120,11 @@ see above and Readme.md
 [65] "mean_BodyBodyGyroMag_freq"       "stddev_BodyBodyGyroMag_freq"    
 [67] "mean_BodyBodyGyroJerkMag_freq"   "stddev_BodyBodyGyroJerkMag_freq"
 
-Brief Explanation: 
+Brief Explanation of the variable renaming logic: 
 - the first factor of the recast name mentions the kind of measurement - mean (mean) or standard deviations (stddev)
 - the second factor of the recase name defines the measures - Body Accelaration (BodyAcc)/ Gravity Acceleration (Gravity_Acc), etc
 - the third factor mentions the axis of measurement - X/Y/Z (where applicable)
+- the fourth factor provides an indication of whether the measure is the time domain variable or a frequency domain variable (as determined by the application of a FFT as described in the raw data)
 
 
 
