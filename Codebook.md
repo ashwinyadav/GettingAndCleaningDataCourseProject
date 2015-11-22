@@ -12,8 +12,9 @@ As per the requirements of the course project of the coursera course Getting and
 
 ##Study design and data processing
 The project did not involve study design, but only the creation of a tidy data set per instructions from the available UCI date
+
 ###Collection of the raw data
-Description of how the data was collected.
+Raw Data was provided through a downloadable ZIP file containing the required raw data and legend files.
 
 ###Notes on the original (raw) data 
 The original raw data is as available on UCI and as provided in the course project description. Broadly, the original dataset consisting of 10299 observations of data across 30 subjects, 6 different activity types and 561 different observations. 
